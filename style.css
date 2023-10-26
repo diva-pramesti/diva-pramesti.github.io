@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --main-color: #cd6174;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    line-height: 1.5;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f9dcd6;
+    padding-left: 30rem;
+}
+
+section {
+    padding: 1rem 5%;
+    min-height: 100vh;
+}
+
+.heading {
+    font-size: 4rem;
+    padding: 3rem;
+    color: #111;
+    text-transform: uppercase;
+    padding-top: 5rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.btn {
+    display: inline-block ;
+    margin-top: 1rem;
+    padding: .8rem 3rem;
+    background: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover {
+    background: #214439;
+    letter-spacing: .2rem;
+
+
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background: #214439;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding: 8rem 2rem;
+    width: 30rem;
+    text-align: center;
+    transition: .9s ease-in-out;
+}
+
+header .logo {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+header .logo span {
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+header .navbar a {
+    display: block;
+    font-size: 2rem;
+    color: #fff;
+    margin: 2rem 0;
+}
+
+header .navbar a:hover {
+    letter-spacing: .2rem;
+    color: var(--main-color);
+}
+
+header .follow a {
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0 .7rem;
+}
+
+header .follow a:hover {
+    color: var(--main-color);
+}
+
+#menu-bars {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10000;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: .5rem;
+    padding: 1rem 1.5rem;
+    font-size: 2.5rem;
+    cursor: pointer;
+    display: none;
+
+}
+
+/* .cursor-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    width: 1rem;
+    background: var(--main-color);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 10000;
+}
+
+.cursor-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1rem;
+    width: 1rem;
+    border: .1rem solid var(--main-color);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 10000;
+    transition: .3s linear;
+}
+.cursor-2.activer {
+    display: none;
+
+} */
+
+/* mulai css home */
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.home .image img{
+    width: 100%;
+
+}
+.home .content {
+    flex: 1 1 40rem;
+}
+.home .content .hi {
+    font-size: 2rem;
+    color: var(--main-color);
+}
+.home .content h3 {
+    
+    font-size: 4.5rem;
+    color: #111;
+    text-transform: uppercase;
+}
+.home .content h3 span{
+    
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+.home .content .info {
+    font-size: 2.5rem ;
+    color: #111;
+    padding: .5rem 0;
+}
+.home .content .text {
+    font-size: 1.7rem ;
+    color: #666;
+    padding: .5rem 0;
+}
+/* selesai css home */
+
+
+/* mulai css about */
+.about .row-1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-bottom: 7rem;
+}
+.about .row-1 .image {
+    flex: 1 1 25rem;
+}
+.about .row-1 .image img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border: 1rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1)  ;
+}
+.about .row-1 .content {
+    flex: 1 1 50rem;
+}
+.about .row-1 .content h3 {
+    color: #333;
+    font-size: 3rem;
+}
+.about .row-1 .content p {
+    color: #666;
+    font-size: 1.7rem;
+    padding: .5rem 0;
+}
+.about .row-1 .content .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+}
+.about .row-1 .content .box-container .box {
+    flex: 1 1 20rem;
+}
+.about .row-1 .content .box-container span {
+    color: var(--main-color); 
+}
+
+.about  .box-container-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    width: 100%;
+}
+.about  .box-container-1 .box-1 {
+    position: relative;
+    border-left: .2rem solid var(--main-color);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 3rem;
+}
+.about  .box-container-1 .box-1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background: var(--main-color);
+}
+.about  .box-container-1 .box-1 .content-1 {
+    background: #fff;
+    padding: 1.5rem;
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+.about  .box-container-1 .box-1 .content-1 span {
+    color: #fff;
+    font-size: 1.7rem;
+    background: var(--main-color);
+    border-radius: 50rem;
+    padding: .4rem 1rem;
+}
+.about  .box-container-1 .box-1 .content-1 h3 {
+    font-size: 2.5rem;
+    padding: .5rem;
+    color: #111;
+}
+.about  .box-container-1 .box-1 .content-1 p {
+    font-size: 1.5rem;
+    color: #666;
+}
+/* selesai css about */
+
+
+/* mulai css skills */
+.skills .row-2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+}
+.skills .row-2 .skills {
+    flex: 1 1 40rem;
+}
+.skills .row-2 .skills .progress {
+    padding: 1rem 0;
+}
+.skills .row-2 .skills .progress h3 {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #111;
+    font-weight: 400;
+    font-weight: bolder;
+}
+.skills .row-2 .skills .progress .bar {
+    width: 100%;
+    background: #ccc;
+    overflow: hidden;
+    height: 2rem;
+    border-radius: 50rem;
+}
+.skills .row-2 .skills .progress .bar span{
+    display: block;
+    height: 100%;
+    background: var(--main-color);
+}
+.skills .row-2 .skills .progress:nth-child(1) .bar span{
+    width: 75%;
+}
+.skills .row-2 .skills .progress:nth-child(2) .bar span{
+    width: 70%;
+}
+.skills .row-2 .skills .progress:nth-child(3) .bar span{
+    width: 50%;
+}
+.skills .row-2 .skills .progress:nth-child(4) .bar span{
+    width: 30%;
+}
+.skills .row-2 .skills .progress:nth-child(5) .bar span{
+    width: 75%;
+}
+.skills .row-2 .skills .progress:nth-child(6) .bar span{
+    width: 45%;
+}
+/* selesai css skilss */
+
+/* mulai css project */
+.portofolio .box-container {
+    display: flex;
+    flex-wrap: wrap;;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+}
+.portofolio .box-container .box {
+    flex: 1 1 30rem;
+    height: 25rem;
+    position: relative;
+    overflow: hidden;
+    border: 1rem solid#fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+.portofolio .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+.portofolio .box-container .box .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition: opacity 1s; 
+    cursor: pointer;
+}
+.portofolio .box-container .box:hover .overlay {
+    opacity: 1;
+}
+.portofolio .box-container .box .overlay a{
+    padding: 20px;
+    font-size: 30px;
+}
+
+
+/* selesai css project */
+
+
+/* mulai css kontak */
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+
+}
+.contact .icons-container  {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+.contact .row form {
+    flex: 1 1 55rem;
+    background: #fff;
+    padding: 0 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+.contact .row .map {
+    flex: 1 1 25rem;
+    border: 1rem solid#fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    width: 100%;
+}
+.contact .row form .box,
+.contact .row form textarea {
+    width: 100%;
+    border-bottom: .1rem solid#333;
+    color: #333;
+    text-transform: none;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    margin: 1rem 0;
+}
+/* .contact .row form .box:focus,
+.contact .row form textarea:focus {
+    background-color: var(--main-color);
+} */
+.contact .row form .box::placeholder,
+.contact .row form textarea::placeholder {
+    text-transform: capitalize;
+}
+.contact .row form textarea {
+    height: 20rem;
+    resize: none;
+}
+.contact .row form .btn {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+/* selesai css kontak */
+
+footer {
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 2.5rem;
+    text-align: center;
+    color: #214439;
+    background-image: linear-gradient(#e695a4, #cd6174);
+    /* background: var(--main-color); */
+}
+footer span {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width:991px) {
+
+    html { 
+        font-size: 55%;
+    }
+
+    body {
+        padding: 0;
+        padding-top: 3rem;
+    }
+
+    #menu-bars {
+        display: initial;
+    }
+
+    header{
+        left: -120%;
+    }
+
+    header.active {
+        left: 0%;
+        transition: .8s  ease-in-out;
+    }
+}
+
+@media (max-width:768px) {
+    
+    html {
+        font-size: 50%;
+    }
+
+    header {
+        width: 100%;
+    }
+    .about .box-container-1{
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .skills, .portofolio {
+        padding: 0; /* Menghapus padding pada kedua section */
+    }
+    .skills .row-2, .portofolio .box-container {
+        gap: 1rem; /* Mengurangi jarak antara elemen-elemen di dalam kedua section */
+    }
+} 
